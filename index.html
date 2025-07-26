@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cư Dân Nông Sản - Trang Chủ</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #388e3c;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      main {
+        padding: 20px;
+        max-width: 1000px;
+        margin: auto;
+        background: white;
+      }
+
+      .shop-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 cột */
+        gap: 20px;
+      }
+      .shop-card:hover {
+      transform: scale(1.05); /* 👈 Zoom in nhẹ khi hover */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+      .shop-card {
+        background: #e8f5e9;
+        border-radius: 8px;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        color: #1b5e20;
+        transition: background 0.3s;
+      }
+
+      .shop-card:hover {
+        background: #c8e6c9;
+      }
+
+      .shop-card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #4d388e;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <h1>Chợ Nông Sản Cư Dân</h1>
+      <p>Nơi cư dân giới thiệu các đặc sản quê nhà</p>
+    </header>
+
+    <main>
+      <h2>Danh sách các sạp hàng</h2>
+      <div class="shop-list">
+        <a class="shop-card" href="sapcoba.html">
+          <img src="rau-cu-qua-da-lat-thumbnail.jpg" alt="Sạp Cô Ba" />
+          <h3>Sạp Cô Ba</h3>
+          <p>Chuyên cung cấp rau củ quả tươi ngon từ Đà Lạt</p>
+        </a>
+
+        <a class="shop-card" href="sapchutu.html">
+          <img src="Screenshot 2025-07-24 003116.png" alt="Sạp Chú Tư" />
+          <h3>Sạp Chú Tư</h3>
+          <p>Gạo và trái cây miền Tây</p>
+        </a>
+
+        <a class="shop-card" href="sapanhhung.html">
+          <img src="anh-hung.jpg" alt="Sạp Anh Hùng" />
+          <h3>Sạp Anh Hùng</h3>
+          <p>Đặc sản vùng núi Tây Bắc</p>
+        </a>
+
+        <a class="shop-card" href="sapthucphamgiasuc.html">
+          <img src="thit-trung.jpg" alt="Thực phẩm tươi sống" />
+          <h3>Sạp Thịt - Trứng - Thực phẩm tươi sống</h3>
+          <p>Cung cấp tất cả các loại thực phẩm ngon chất lượng</p>
+        </a>
+
+        <a class="shop-card" href="sapgiavi.html">
+          <img src="gia-vi.jpg" alt="Sạp Gia Vị" />
+          <h3>Sạp Gia Vị Và Sản Phẩm Chế Biến</h3>
+          <p>Cung cấp các loại gia vị chất lượng cho món ăn</p>
+        </a>
+
+        <a class="shop-card" href="saphangnhapkhau.html">
+          <img src="nhap-khau.jpg" alt="Sạp Nhập Khẩu" />
+          <h3>Sạp Hàng Nhập Khẩu</h3>
+          <p>Chuyên cung cấp hàng nhập khẩu từ nước ngoài chất lượng</p>
+        </a>
+      </div>
+    </main>
+
+    <footer>&copy; 2025 Chợ Nông Sản Cư Dân</footer>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sạp Gia Vị Và Sản Phẩm Chế Biến</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #fff8e1;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #6d4c41;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+      main {
+        max-width: 1000px;
+        margin: auto;
+        padding: 20px;
+        background-color: white;
+      }
+      .product-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .product-card {
+        flex: 1 1 calc(33.333% - 20px);
+        background-color: #fbe9e7;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      .product-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+      .product-card h3 {
+        margin: 10px 0 5px;
+        color: #4e342e;
+      }
+      .product-card p {
+        font-size: 14px;
+        color: #5d4037;
+      }
+      footer {
+        text-align: center;
+        background-color: #6d4c41;
+        color: white;
+        padding: 15px;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Sạp Gia Vị Và Sản Phẩm Chế Biến</h1>
+      <p>
+        Chuyên cung cấp gia vị truyền thống và thực phẩm chế biến sẵn chất lượng
+        cao
+      </p>
+    </header>
+
+    <main>
+      <h2>Danh sách sản phẩm nổi bật</h2>
+      <div class="product-list">
+        <div class="product-card">
+          <img src="images/nuoc-mam.jpg" alt="Nước mắm truyền thống" />
+          <h3>Nước Mắm Truyền Thống</h3>
+          <p>
+            Được ủ từ cá cơm nguyên chất tại Phan Thiết, đậm đà, không pha tạp,
+            chai 500ml.
+          </p>
+        </div>
+        <div class="product-card">
+          <img src="images/tieu-den.jpg" alt="Tiêu đen nguyên hạt" />
+          <h3>Tiêu Đen Nguyên Hạt</h3>
+          <p>Tiêu đen đặc sản Phú Quốc, cay nồng tự nhiên, gói 100g.</p>
+        </div>
+        <div class="product-card">
+          <img src="images/tuong-ot.jpg" alt="Tương ớt lên men" />
+          <h3>Tương Ớt Lên Men</h3>
+          <p>Hương vị cay nồng tự nhiên, không phẩm màu, chai 250ml.</p>
+        </div>
+        <div class="product-card">
+          <img src="images/cha-ca.jpg" alt="Chả cá chiên sẵn" />
+          <h3>Chả Cá Chiên Sẵn</h3>
+          <p>
+            Chả cá thát lát nguyên chất, chiên sẵn, 500g, đóng hút chân không.
+          </p>
+        </div>
+        <div class="product-card">
+          <img src="images/bot-nghe.jpg" alt="Bột nghệ nguyên chất" />
+          <h3>Bột Nghệ Nguyên Chất</h3>
+          <p>Sản phẩm thủ công, không hóa chất, gói 200g.</p>
+        </div>
+        <div class="product-card">
+          <img src="images/duamon.jpg" alt="Dưa món ngày Tết" />
+          <h3>Dưa Món Truyền Thống</h3>
+          <p>Dưa món ngâm giòn ngon, vị đậm đà, hũ 400g.</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>&copy; 2025 Sạp Gia Vị Và Sản Phẩm Chế Biến</footer>
+    <a href="index.html">← Quay lại</a>
+  </body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sạp Gia Vị Và Sản Phẩm Chế Biến</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #fff8e1;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #6d4c41;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+      main {
+        max-width: 1000px;
+        margin: auto;
+        padding: 20px;
+        background-color: white;
+      }
+      .product-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .product-card:hover {
+        transform: scale(1.05); /* 👈 Zoom in nhẹ khi hover */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+      .product-card {
+        flex: 1 1 calc(33.333% - 20px);
+        background-color: #fbe9e7;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      .product-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+      .product-card h3 {
+        margin: 10px 0 5px;
+        color: #4e342e;
+      }
+      .product-card p {
+        font-size: 14px;
+        color: #5d4037;
+      }
+      .buy-button {
+        background-color: #e6fff1; /* Màu nền xanh nhạt */
+        color: #2b0066; /* Màu chữ xanh đậm */
+        border: none;
+        padding: 10px 30px;
+        border-radius: 10px; /* Bo góc */
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: none;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .buy-button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 2px 8px rgba(0, 50, 100, 0.2);
+      }
+
+      footer {
+        text-align: center;
+        background-color: #6d4c41;
+        color: white;
+        padding: 15px;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Sạp Gia Vị Và Sản Phẩm Chế Biến</h1>
+      <p>
+        Chuyên cung cấp gia vị truyền thống và thực phẩm chế biến sẵn chất lượng
+        cao
+      </p>
+    </header>
+
+    <main>
+      <h2>Danh sách sản phẩm nổi bật</h2>
+      <div class="product-list">
+        <div class="product-card">
+        <iframe width="300" height="150" src="https://www.youtube.com/embed/CCrS5f6TVPM?si=iMYPg5SpJ56lK0fg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+          <h3>Nước Mắm Truyền Thống</h3>
+
+          <a href="nuocmam.html"
+            ><button class="buy-button">Xem Chi Tiết</button></a
+          >
+        </div>
+
+        <div class="product-card">
+          <iframe width="300" height="150" src="https://www.youtube.com/embed/J9xCF9hDHlo?si=HnFnd6e1_kPQJy1f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h3>Tiêu Đen Nguyên Hạt</h3>
+
+          <a href="tieuden.html"
+            ><button class="buy-button">Xem Chi Tiết</button></a
+          >
+        </div>
+
+        <div class="product-card">
+          <iframe width="300" height="150" src="https://www.youtube.com/embed/de00fvQe0rk?si=TJ4tYjXFBEZJBiOl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h3>Tương Ớt Lên Men</h3>
+
+          <a href="tuongot.html"
+            ><button class="buy-button">Xem Chi Tiết</button></a
+          >
+        </div>
+        <div class="product-card">
+         
+          <h3>Muối Tôm Tây Ninh</h3>
+          <iframe width="300" height="150" src="https://www.youtube.com/embed/Ykzi-T6s0uE?si=mKH3oVlm5DFufEqS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <a href="chaca.html"
+            ><button class="buy-button">Xem Chi Tiết</button></a
+          >
+        </div>
+        <div class="product-card">
+          <img src="images/bot-nghe.jpg" alt="Bột nghệ nguyên chất" />
+          <h3>Bột Nghệ Nguyên Chất</h3>
+
+          <a href="botnghe.html"
+            ><button class="buy-button">Xem Chi Tiết</button></a
+          >
+        </div>
+        <div class="product-card">
+          <img src="images/duamon.jpg" alt="" />
+          <h3>Dưa muối Truyền Thống</h3>
+
+           <a href="duamuoi.html"
+            ><button class="buy-button">Xem Chi Tiết</button></a
+          >
+        </div>
+      </div>
+    </main>
+    <a href="index.html">← Quay lại</a>
+    <footer>&copy; 2025 Sạp Gia Vị Và Sản Phẩm Chế Biến</footer>
+  </body>
+  <!-- BONG BÓNG CHAT LIÊN HỆ -->
+  <style>
+    /* Bong bóng nhỏ */
+    .chat-bubble {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background-color: #28a745;
+      color: white;
+      padding: 12px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 999;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      width: 55px;
+      height: 55px;
+      text-align: center;
+      font-size: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Khung thông tin popup */
+    .contact-popup {
+      position: fixed;
+      bottom: 90px;
+      left: 20px;
+      width: 260px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      padding: 15px;
+      display: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      z-index: 998;
+      font-family: Arial, sans-serif;
+    }
+
+    .contact-popup p {
+      margin: 10px 0;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .contact-popup a {
+      text-decoration: none;
+      color: #007bff;
+      font-size: 14px;
+    }
+
+    .contact-popup img {
+      width: 20px;
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+  </style>
+
+  <!-- Bong bóng -->
+  <div class="chat-bubble" onclick="toggleContact()">📞</div>
+
+  <!-- Popup thông tin liên hệ -->
+  <div class="contact-popup" id="contactPopup">
+    <p><strong>📍 Địa chỉ:</strong><br />123 Đường Nông Sản, Q9, TP.HCM</p>
+    <p>
+      <strong>📞 Điện thoại:</strong><br /><a href="tel:0987654321"
+        >0987 654 321</a
+      >
+    </p>
+    <p>
+      <strong>📧 Email:</strong><br /><a href="mailto:nongsan@gmail.com"
+        >nongsan@gmail.com</a
+      >
+    </p>
+    <p>
+      <a href="https://www.facebook.com/tenfacebook" target="_blank">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+          alt="Facebook"
+        />
+        Facebook
+      </a>
+    </p>
+    <p>
+      <a href="https://zalo.me/0987654321" target="_blank">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg"
+          alt="Zalo"
+        />
+        Zalo
+      </a>
+    </p>
+  </div>
+
+  <!-- Script bật/tắt -->
+  <script>
+    function toggleContact() {
+      var popup = document.getElementById("contactPopup");
+      popup.style.display = popup.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</html>
