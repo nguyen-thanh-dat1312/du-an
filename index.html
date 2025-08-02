@@ -3,40 +3,138 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cư Dân Nông Sản - Trang Chủ</title>
+    <title>Chợ Nông Sản Tươi Sạch</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <style>
       body {
         font-family: Arial, sans-serif;
-        background-color: #f0f0f0;
+        background-color: rgb(193, 230, 190);
         margin: 0;
         padding: 0;
       }
 
+      /* Navbar */
+      .navbar {
+        background: linear-gradient(to right, #057d39, #74bd26);
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .logo img {
+        height: 40px;
+      }
+
+      .logo span {
+        font-size: 20px;
+        font-weight: bold;
+        color: yellow;
+      }
+
+      .search-container {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        border-radius: 8px;
+        padding: 5px 10px;
+        flex: 1;
+        margin: 10px 20px;
+        max-width: 700px;
+      }
+
+      .search-container input {
+        border: none;
+        outline: none;
+        flex: 1;
+        padding: 8px;
+        font-size: 16px;
+      }
+
+      .search-container i {
+        color: green;
+        font-size: 18px;
+        margin: 0 8px;
+      }
+
+      .location {
+        background-color: rgba(255, 255, 255, 0.3);
+        border: 2px solid rgba(255, 255, 255, 0.4);
+        padding: 8px 14px;
+        border-radius: 25px;
+        color: white;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+
+      .login {
+        background-color: #005f2e;
+        border-radius: 6px;
+        padding: 8px 14px;
+        color: white;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        cursor: pointer;
+      }
+
+      .login a {
+        color: white;
+        text-decoration: none;
+        margin: 0 5px;
+      }
+
+      .login a:hover {
+        text-decoration: underline;
+      }
+
+      /* Header */
       header {
         background-color: #388e3c;
-        color: white;
+        color: rgb(19, 2, 6);
         padding: 20px;
         text-align: center;
       }
 
+      header img {
+        width: 100%;
+        max-height: 500px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-top: 15px;
+      }
+
+      /* Main content */
       main {
         padding: 20px;
         max-width: 1000px;
         margin: auto;
-        background: white;
+        background: rgb(255, 255, 255);
       }
 
       .shop-list {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 cột */
+        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
       }
-      .shop-card:hover {
-      transform: scale(1.05); /* 👈 Zoom in nhẹ khi hover */
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      }
+
       .shop-card {
-        background: #e8f5e9;
+        background: #f5e8f0;
         border-radius: 8px;
         padding: 15px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -44,11 +142,13 @@
         text-align: center;
         text-decoration: none;
         color: #1b5e20;
-        transition: background 0.3s;
+        transition: background 0.3s, transform 0.3s;
       }
 
       .shop-card:hover {
         background: #c8e6c9;
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
       }
 
       .shop-card img {
@@ -67,12 +167,37 @@
     </style>
   </head>
   <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div style="display: flex; align-items: center">
+        <div class="logo">
+          <img src="lovepik-agricultural-logo-png-image_401740052_wh1200.png" alt="Logo" />
+          <span>Chợ Nông Sản Tươi Sạch</span>
+        </div>
+      </div>
 
+      <div class="search-container">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Bạn cần mua gì" />
+        <i class="fas fa-shopping-cart"></i>
+      </div>
+
+      
+        <div class="login">
+          <i class="fas fa-user"></i>
+          <a href="dangnhap.html">Đăng nhập</a> |
+          <a href="dangki.html">Đăng ký</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
     <header>
-      <h1>Chợ Nông Sản Cư Dân</h1>
-      <p>Nơi cư dân giới thiệu các đặc sản quê nhà</p>
+      <img src="nongsanvie-1595405197-19.jpg" alt="Banner" />
+      <b style="font-size: 25px">Nơi Cư Dân Bán Hàng Đặc Sản Quê Nhà</b>
     </header>
 
+    <!-- Main content -->
     <main>
       <h2>Danh sách các sạp hàng</h2>
       <div class="shop-list">
@@ -89,25 +214,28 @@
         </a>
 
         <a class="shop-card" href="sapanhhung.html">
-          <img src="anh-hung.jpg" alt="Sạp Anh Hùng" />
+          <img src="dac-san-tay-bac.jpg" alt="Sạp Anh Hùng" />
           <h3>Sạp Anh Hùng</h3>
           <p>Đặc sản vùng núi Tây Bắc</p>
         </a>
 
         <a class="shop-card" href="sapthucphamgiasuc.html">
-          <img src="thit-trung.jpg" alt="Thực phẩm tươi sống" />
+          <img src="thuc-pham-tuoi-song.jpg" alt="Thực phẩm tươi sống" />
           <h3>Sạp Thịt - Trứng - Thực phẩm tươi sống</h3>
           <p>Cung cấp tất cả các loại thực phẩm ngon chất lượng</p>
         </a>
 
         <a class="shop-card" href="sapgiavi.html">
-          <img src="gia-vi.jpg" alt="Sạp Gia Vị" />
+          <img src="maxresdefault (1).jpg" alt="Sạp Gia Vị" />
           <h3>Sạp Gia Vị Và Sản Phẩm Chế Biến</h3>
           <p>Cung cấp các loại gia vị chất lượng cho món ăn</p>
         </a>
 
         <a class="shop-card" href="saphangnhapkhau.html">
-          <img src="nhap-khau.jpg" alt="Sạp Nhập Khẩu" />
+          <img
+            src="1080_37bbaef80ffe48e88dd925556dfe421e_2048x2048.jpg"
+            alt="Sạp Nhập Khẩu"
+          />
           <h3>Sạp Hàng Nhập Khẩu</h3>
           <p>Chuyên cung cấp hàng nhập khẩu từ nước ngoài chất lượng</p>
         </a>
