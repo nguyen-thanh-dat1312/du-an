@@ -27,6 +27,11 @@
         flex-wrap: wrap;
         gap: 20px;
       }
+
+      .product-card:hover {
+        transform: scale(1.05); /* 👈 Zoom in nhẹ khi hover */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
       .product-card {
         flex: 1 1 calc(33.333% - 20px);
         background-color: #fbe9e7;
@@ -35,7 +40,8 @@
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         text-align: center;
       }
-      .product-card img {
+      .product-card img,
+      .product-card iframe {
         width: 100%;
         height: 180px;
         object-fit: cover;
@@ -49,6 +55,24 @@
         font-size: 14px;
         color: #5d4037;
       }
+      .buy-button {
+        background-color: #e6fff1; /* Màu nền xanh nhạt */
+        color: #2b0066; /* Màu chữ xanh đậm */
+        border: none;
+        padding: 10px 30px;
+        border-radius: 10px; /* Bo góc */
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: none;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .buy-button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 2px 8px rgba(0, 50, 100, 0.2);
+      }
+
       footer {
         text-align: center;
         background-color: #6d4c41;
@@ -67,40 +91,149 @@
       <h2>Danh sách sản phẩm nổi bật</h2>
       <div class="product-list">
         <div class="product-card">
-          <a class="shop-card" href="nuocmam.html"></a>
-          <img src="images/nuoc-mam.jpg" alt="Nước mắm truyền thống" />
-          <h3>Xà lách Đà Lạt</h3>
-         
-        </div>
-        <div class="product-card">
-          <img src="images/tieu-den.jpg" alt="Tiêu đen nguyên hạt" />
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/nBg4KsJiYRo?si=JJndqyGxSxa_mJRp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <h3>Cà chua beef và cherry</h3>
-          
+          <a href="cachuacoba.html"
+            ><button class="buy-button">Xem Chi Tiết</button></a
+          >
         </div>
+
         <div class="product-card">
-          <img src="images/tuong-ot.jpg" alt="Tương ớt lên men" />
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/7Ho4xuQohNI?si=VYp0yqyXqVYfMZmf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <h3>Súp lơ xanh & trắng</h3>
-          
+          <a href="suplocoba.html"
+            ><button class="buy-button">Xem Chi Tiết</button></a
+          >
         </div>
+
         <div class="product-card">
-          <img src="images/cha-ca.jpg" alt="Chả cá chiên sẵn" />
-          <h3>Củ dền cà rốt khoai tây</h3>
-          
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/N62OrcTrJMU?si=Wjy8CyL2cI5M8YwM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h3>Củ dền, cà rốt, khoai tây</h3>
+          <a href="cudencoba.html"
+            ><button class="buy-button">Xem Chi Tiết</button></a
+          >
         </div>
+
         <div class="product-card">
-          <img src="images/bot-nghe.jpg" alt="Bột nghệ nguyên chất" />
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/T73SE8JiS5A?si=F9kkyO1MvntgCU9f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <h3>Bí ngòi, cải bó xôi, cải kale</h3>
-          
+          <a href="bingoicoba.html"
+            ><button class="buy-button">Xem Chi Tiết</button></a
+          >
         </div>
+
         <div class="product-card">
-          <img src="images/duamon.jpg" alt="Dưa món ngày Tết" />
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/4OmfSmSH89c?si=lGbCzX2wNx-ZHApW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <h3>Khoai lang mật Đà Lạt</h3>
-          
+          <a href="khoailangcoba.html"
+            ><button class="buy-button">Xem Chi Tiết</button></a
+          >
         </div>
       </div>
     </main>
-
-    <footer>&copy; 2025 Sạp Gia Vị Và Sản Phẩm Chế Biến</footer>
     <a href="index.html">← Quay lại</a>
+    <footer>&copy; 2025 Sạp Cô Ba</footer>
   </body>
+
+  <!-- BONG BÓNG CHAT LIÊN HỆ -->
+  <style>
+    /* Bong bóng nhỏ */
+    .chat-bubble {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background-color: #28a745;
+      color: white;
+      padding: 12px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 999;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      width: 55px;
+      height: 55px;
+      text-align: center;
+      font-size: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Khung thông tin popup */
+    .contact-popup {
+      position: fixed;
+      bottom: 90px;
+      left: 20px;
+      width: 260px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      padding: 15px;
+      display: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      z-index: 998;
+      font-family: Arial, sans-serif;
+    }
+
+    .contact-popup p {
+      margin: 10px 0;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .contact-popup a {
+      text-decoration: none;
+      color: #007bff;
+      font-size: 14px;
+    }
+
+    .contact-popup img {
+      width: 20px;
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+  </style>
+
+  <!-- Bong bóng -->
+  <div class="chat-bubble" onclick="toggleContact()">📞</div>
+
+  <!-- Popup thông tin liên hệ -->
+  <div class="contact-popup" id="contactPopup">
+    <p><strong>📍 Địa chỉ:</strong><br />123 Đường Nông Sản, Q9, TP.HCM</p>
+    <p>
+      <strong>📞 Điện thoại:</strong><br /><a href="tel:0987654321"
+        >0987 654 321</a
+      >
+    </p>
+    <p>
+      <strong>📧 Email:</strong><br /><a href="mailto:nongsan@gmail.com"
+        >nongsan@gmail.com</a
+      >
+    </p>
+    <p>
+      <a href="https://www.facebook.com/tenfacebook" target="_blank">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+          alt="Facebook"
+        />
+        Facebook
+      </a>
+    </p>
+    <p>
+      <a href="https://zalo.me/0987654321" target="_blank">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg"
+          alt="Zalo"
+        />
+        Zalo
+      </a>
+    </p>
+  </div>
+
+  <!-- Script bật/tắt -->
+  <script>
+    function toggleContact() {
+      var popup = document.getElementById("contactPopup");
+      popup.style.display = popup.style.display === "block" ? "none" : "block";
+    }
+  </script>
 </html>

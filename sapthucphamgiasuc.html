@@ -2,16 +2,16 @@
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
-    <title>Sạp Thực Phẩm Gia Suc</title>
+    <title>Sạp Thịt - Trứng - Thực phẩm tươi sống</title>
     <style>
       body {
         font-family: Arial, sans-serif;
-        background-color: #e1faff;
+        background-color: #fff8e1;
         margin: 0;
         padding: 0;
       }
       header {
-        background-color: #41606d;
+        background-color: #6d4c41;
         color: white;
         text-align: center;
         padding: 20px;
@@ -20,12 +20,17 @@
         max-width: 1000px;
         margin: auto;
         padding: 20px;
-        background-color: rgb(255, 255, 255);
+        background-color: white;
       }
       .product-list {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
+      }
+
+      .product-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
       }
       .product-card {
         flex: 1 1 calc(33.333% - 20px);
@@ -45,9 +50,20 @@
         margin: 10px 0 5px;
         color: #4e342e;
       }
-      .product-card p {
-        font-size: 14px;
-        color: #5d4037;
+      .buy-button {
+        background-color: #e6fff1;
+        color: #2b0066;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      .buy-button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 2px 8px rgba(0, 50, 100, 0.2);
       }
       footer {
         text-align: center;
@@ -60,50 +76,134 @@
   </head>
   <body>
     <header>
-      <h1>Sạp Thực Phẩm Gia Súc</h1>
-      <p>Chuyên cung cấp thực phẩm tươi ngon chất lượng</p>
+      <h1>Sạp Thịt - Trứng - Thực phẩm tươi sống</h1>
     </header>
+
     <main>
-      <h2>Danh sách sản phẩm nổi bật</h2>
+      <h2>Danh sách thực phẩm chất lượng</h2>
       <div class="product-list">
         <div class="product-card">
-          <img src="images/nuoc-mam.jpg" alt="Nước mắm truyền thống" />
-          <h3>Nước Mắm Truyền Thống</h3>
-          <p>
-            Được ủ từ cá cơm nguyên chất tại Phan Thiết, đậm đà, không pha tạp,
-            chai 500ml.
-          </p>
+          <img src="images/thit-heo.jpg" alt="Thịt heo sạch" />
+          <h3>Thịt heo sạch</h3>
+          <a href="thitheo.html"><button class="buy-button">Xem Chi Tiết</button></a>
         </div>
+
         <div class="product-card">
-          <img src="images/tieu-den.jpg" alt="Tiêu đen nguyên hạt" />
-          <h3>Tiêu Đen Nguyên Hạt</h3>
-          <p>Tiêu đen đặc sản Phú Quốc, cay nồng tự nhiên, gói 100g.</p>
+          <img src="images/thit-bo.jpg" alt="Thịt bò Úc nhập khẩu" />
+          <h3>Thịt bò Úc nhập khẩu</h3>
+          <a href="thitbo.html"><button class="buy-button">Xem Chi Tiết</button></a>
         </div>
+
         <div class="product-card">
-          <img src="images/tuong-ot.jpg" alt="Tương ớt lên men" />
-          <h3>Tương Ớt Lên Men</h3>
-          <p>Hương vị cay nồng tự nhiên, không phẩm màu, chai 250ml.</p>
+          <img src="images/ga-ta.jpg" alt="Gà ta thả vườn" />
+          <h3>Gà ta thả vườn</h3>
+          <a href="gata.html"><button class="buy-button">Xem Chi Tiết</button></a>
         </div>
+
         <div class="product-card">
-          <img src="images/cha-ca.jpg" alt="Chả cá chiên sẵn" />
-          <h3>Chả Cá Chiên Sẵn</h3>
-          <p>
-            Chả cá thát lát nguyên chất, chiên sẵn, 500g, đóng hút chân không.
-          </p>
+          <img src="images/ca-hoi.jpg" alt="Cá hồi Na Uy" />
+          <h3>Cá hồi Na Uy</h3>
+          <a href="cahoi.html"><button class="buy-button">Xem Chi Tiết</button></a>
         </div>
+
         <div class="product-card">
-          <img src="images/bot-nghe.jpg" alt="Bột nghệ nguyên chất" />
-          <h3>Bột Nghệ Nguyên Chất</h3>
-          <p>Sản phẩm thủ công, không hóa chất, gói 200g.</p>
+          <img src="images/trung-ga.jpg" alt="Trứng gà sạch hữu cơ" />
+          <h3>Trứng gà sạch hữu cơ</h3>
+          <a href="trungga.html"><button class="buy-button">Xem Chi Tiết</button></a>
         </div>
+
         <div class="product-card">
-          <img src="images/duamon.jpg" alt="Dưa món ngày Tết" />
-          <h3>Dưa Món Truyền Thống</h3>
-          <p>Dưa món ngâm giòn ngon, vị đậm đà, hũ 400g.</p>
+          <img src="images/rau-cu.jpg" alt="Rau củ quả tươi" />
+          <h3>Rau củ quả tươi</h3>
+          <a href="raucu.html"><button class="buy-button">Xem Chi Tiết</button></a>
         </div>
       </div>
     </main>
 
-    <footer>&copy; 2025 Sạp Gia Vị Và Sản Phẩm Chế Biến</footer>
+    <a href="index.html">← Quay lại</a>
+    <footer>&copy; 2025 Sạp Thịt - Trứng - Thực phẩm tươi sống</footer>
   </body>
+
+  <!-- Bong bóng chat liên hệ -->
+  <style>
+    .chat-bubble {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background-color: #28a745;
+      color: white;
+      padding: 12px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 999;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      width: 55px;
+      height: 55px;
+      text-align: center;
+      font-size: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .contact-popup {
+      position: fixed;
+      bottom: 90px;
+      left: 20px;
+      width: 260px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      padding: 15px;
+      display: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      z-index: 998;
+      font-family: Arial, sans-serif;
+    }
+    .contact-popup p {
+      margin: 10px 0;
+      font-size: 14px;
+      color: #333;
+    }
+    .contact-popup a {
+      text-decoration: none;
+      color: #007bff;
+      font-size: 14px;
+    }
+    .contact-popup img {
+      width: 20px;
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+  </style>
+
+  <div class="chat-bubble" onclick="toggleContact()">📞</div>
+
+  <div class="contact-popup" id="contactPopup">
+    <p><strong>📍 Địa chỉ:</strong><br />123 Đường Nông Sản, Q9, TP.HCM</p>
+    <p>
+      <strong>📞 Điện thoại:</strong><br /><a href="tel:0987654321">0987 654 321</a>
+    </p>
+    <p>
+      <strong>📧 Email:</strong><br /><a href="mailto:nongsan@gmail.com">nongsan@gmail.com</a>
+    </p>
+    <p>
+      <a href="https://www.facebook.com/tenfacebook" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" />
+        Facebook
+      </a>
+    </p>
+    <p>
+      <a href="https://zalo.me/0987654321" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo" />
+        Zalo
+      </a>
+    </p>
+  </div>
+
+  <script>
+    function toggleContact() {
+      var popup = document.getElementById("contactPopup");
+      popup.style.display = popup.style.display === "block" ? "none" : "block";
+    }
+  </script>
 </html>

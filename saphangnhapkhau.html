@@ -2,7 +2,7 @@
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
-    <title>Sạp Gia Vị Và Sản Phẩm Chế Biến</title>
+    <title>Sạp Hàng Nhập Khẩu</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -27,6 +27,10 @@
         flex-wrap: wrap;
         gap: 20px;
       }
+      .product-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
       .product-card {
         flex: 1 1 calc(33.333% - 20px);
         background-color: #fbe9e7;
@@ -45,9 +49,20 @@
         margin: 10px 0 5px;
         color: #4e342e;
       }
-      .product-card p {
-        font-size: 14px;
-        color: #5d4037;
+      .buy-button {
+        background-color: #e6fff1;
+        color: #2b0066;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      .buy-button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 2px 8px rgba(0, 50, 100, 0.2);
       }
       footer {
         text-align: center;
@@ -60,56 +75,63 @@
   </head>
   <body>
     <header>
-      <h1>Sạp Gia Vị Và Sản Phẩm Chế Biến</h1>
-      <p>
-        Chuyên cung cấp gia vị truyền thống và thực phẩm chế biến sẵn chất lượng
-        cao
-      </p>
+      <h1>Sạp Hàng Nhập Khẩu</h1>
     </header>
 
     <main>
-      <h2>Danh sách sản phẩm nổi bật</h2>
+      <h2>Chuyên cung cấp hàng nhập khẩu từ nước ngoài chất lượng</h2>
       <div class="product-list">
         <div class="product-card">
-          <img src="images/nuoc-mam.jpg" alt="Nước mắm truyền thống" />
-          <h3>Nước Mắm Truyền Thống</h3>
-          <p>
-            Được ủ từ cá cơm nguyên chất tại Phan Thiết, đậm đà, không pha tạp,
-            chai 500ml.
-          </p>
+          <img src="images/tao-my.jpg" alt="Táo Mỹ đỏ" />
+          <h3>Táo Mỹ đỏ</h3>
+          <a href="taomy.html"
+            ><button class="buy-button">Xem Chi Tiết</button></a
+          >
         </div>
+
         <div class="product-card">
-          <img src="images/tieu-den.jpg" alt="Tiêu đen nguyên hạt" />
-          <h3>Tiêu Đen Nguyên Hạt</h3>
-          <p>Tiêu đen đặc sản Phú Quốc, cay nồng tự nhiên, gói 100g.</p>
+          <img src="images/nho-uc.jpg" alt="Nho đen không hạt Úc" />
+          <h3>Nho đen không hạt Úc</h3>
+          <a href="nhouc.html"
+            ><button class="buy-button">Xem Chi Tiết</button></a
+          >
         </div>
+
         <div class="product-card">
-          <img src="images/tuong-ot.jpg" alt="Tương ớt lên men" />
-          <h3>Tương Ớt Lên Men</h3>
-          <p>Hương vị cay nồng tự nhiên, không phẩm màu, chai 250ml.</p>
+          <img src="images/cam-aicap.jpg" alt="Cam Ai Cập" />
+          <h3>Cam Ai Cập</h3>
+          <a href="camaicap.html"
+            ><button class="buy-button">Xem Chi Tiết</button></a
+          >
         </div>
+
         <div class="product-card">
-          <img src="images/cha-ca.jpg" alt="Chả cá chiên sẵn" />
-          <h3>Chả Cá Chiên Sẵn</h3>
-          <p>
-            Chả cá thát lát nguyên chất, chiên sẵn, 500g, đóng hút chân không.
-          </p>
+          <img src="images/kiwi.jpg" alt="Kiwi vàng New Zealand" />
+          <h3>Kiwi vàng New Zealand</h3>
+          <a href="kiwi.html"
+            ><button class="buy-button">Xem Chi Tiết</button></a
+          >
         </div>
+
         <div class="product-card">
-          <img src="images/bot-nghe.jpg" alt="Bột nghệ nguyên chất" />
-          <h3>Bột Nghệ Nguyên Chất</h3>
-          <p>Sản phẩm thủ công, không hóa chất, gói 200g.</p>
+          <img src="images/bo-kobe.jpg" alt="Thịt bò Kobe Nhật Bản" />
+          <h3>Thịt bò Kobe Nhật Bản</h3>
+          <a href="bokobe.html"
+            ><button class="buy-button">Xem Chi Tiết</button></a
+          >
         </div>
+
         <div class="product-card">
-          <img src="images/duamon.jpg" alt="Dưa món ngày Tết" />
-          <h3>Dưa Món Truyền Thống</h3>
-          <p>Dưa món ngâm giòn ngon, vị đậm đà, hũ 400g.</p>
+          <img src="images/ca-hoi.jpg" alt="Cá hồi Na Uy phi lê" />
+          <h3>Cá hồi Na Uy phi lê</h3>
+          <a href="cahoi.html"
+            ><button class="buy-button">Xem Chi Tiết</button></a
+          >
         </div>
       </div>
     </main>
 
-    <footer>&copy; 2025 Sạp Gia Vị Và Sản Phẩm Chế Biến</footer>
     <a href="index.html">← Quay lại</a>
+    <footer>&copy; 2025 Sạp Hàng Nhập Khẩu</footer>
   </body>
 </html>
-
